@@ -1,0 +1,330 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face{
+    font-family: "nunito";
+    src: url(nunito_sans/NunitoSans-Regular.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face{
+    font-family: "festive";
+    src: url(festive/Festive-Regular.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+body{
+    width: 100%;
+    font-family: nunito;
+    font-size: 1em;
+}
+.contenedor{
+    width: 100%;
+}
+#inicio{
+    background-image: url('../img/inicio.jpg');
+    height: 100vh;
+    background-size: cover;
+    background-position: 50% 0;
+    background-repeat: no-repeat;
+    margin-bottom: 0;
+}
+#perfil{
+    background-image: url('../img/perfil.jpg');
+    height: 100vh;
+    background-size: cover;
+    background-position: 50% 0;
+    background-repeat: no-repeat;
+    margin-bottom: 0;    
+}
+#temas{
+    background-image: url('../img/temas.jpg');
+    height: 100vh;
+    background-size: cover;
+    background-position: 50% 0;
+    background-repeat: no-repeat;
+    margin-bottom: 0;    
+}
+#prog{
+    background-image: url('../img/contacto.jpg');
+    height: 100vh;
+    background-size: cover;
+    background-position: 50% 0;
+    background-repeat: no-repeat;
+    margin-bottom: 0;    
+}
+header{
+    background: rgba(241, 244, 245, 0.596);
+    position: fixed;
+    width: 100%;
+    top: 0;    
+}
+.menu{
+    width: 95%;
+    max-width: 1200px;
+    margin: 2% auto;
+    padding: 0 1.5em;
+    display: flex;
+    flex-direction: center;
+    justify-content: space-around;
+    z-index: 2002;
+}
+.menu .enlaces{
+    display: inline-block;
+    text-align: right;
+}
+.menu .enlaces a{
+    color: #111;
+    text-decoration: none;
+    display: inline-block;
+    padding: 0.1em 1em;
+    text-align: center;
+    font-size: 1.1em;
+}
+.menu .enlaces i{
+    margin-right: 5px;
+}
+.menu .enlaces a:hover{
+    border-bottom: 2px solid blue;
+}
+.menu .current{
+    border-bottom: 2px solid #111;
+}
+#inicio, h1{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    color: #111;
+}
+.frase{
+    width: 80%;
+    height: 70%;
+    margin: auto;
+    padding: 1em;
+    font-weight: bold;
+}
+.frase h1{
+    display: flex;
+    justify-content: center;
+    font-family: festive;   
+    font-size: 3em;
+}
+#perfil, p{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    color: #111;
+}
+#perfil .per{
+    border-radius: 50%;
+    padding: .5em;
+}
+.present{
+    width: 80%;
+    height: 70%;
+    margin: auto;
+}
+.present p{
+    display: flex;
+    justify-content: center;
+    /* font-family: festive;    */
+    font-size: 2.5em;
+    color: #111;
+    font-weight: bold;
+}
+#temas{
+    display: flex;
+    text-align: center;
+    margin: auto;
+    font-size: 1.5em;
+}
+.tem{
+    width: 90%;
+    height: 75%;
+    margin: auto;
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.tem .t{
+    padding: 1em;
+    margin: 1em;
+    color: #fff;
+    width: 90%;
+    height: 75%;
+}
+.pr{
+    width: 90%;
+    height: 55%;
+    margin: auto;
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(204, 204, 204, 0.562);
+}
+.pr .p{
+    padding: 1em;
+    margin: 1em;
+    width: 90%;
+    height: 80%;
+}
+.pr .p p{
+    color: #111;
+    font-weight: bold;
+}
+.t:hover .image {
+    -webkit-transform:scale(1.3);transform:scale(1.3);
+}
+.t:hover .image1 {
+    -webkit-transform:scale(1.3);transform:scale(1.3);
+}
+.t:hover .image2 {
+    -webkit-transform:scale(1.3);transform:scale(1.3);
+}
+.t {
+    overflow:hidden;
+}
+#prog .pro{
+    padding: 4em;
+}
+.titulo_pg{
+    width: 40%;
+    margin: auto;
+    padding: 1em;
+}
+.titulo_pg, p{
+    display: flex;
+    text-align: center;
+    font-size: 1.5em;
+    color: #fff;
+}
+.footer{
+    background: rgba(141, 145, 146, 0.589);
+}
+.footer_titulo{
+    font-weight: 400;
+    color: #111;
+    font-size: 2rem;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.footer_iconos{
+    display: flex;
+    justify-content: space-around; 
+}
+.footer_contenedor_iconos{
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    color: #111;
+    text-align: center;
+    border: 1px solid #111;
+    border-radius: 50%;
+}
+.footer_icon{
+    color: #111;
+    text-decoration: none;
+}
+.fa.footer_icon{
+    line-height: 60px;
+    font-size: 30px;
+}
+.derechos{
+    color: #111;
+    display: flex;
+    font-size: 15px;
+}
+/* Mediaqueris */
+@media screen and (max-width:800px) {
+    header{
+        background: #111;
+    }
+    .menu{
+        width: 100%;
+        font-size: .5em;
+    }
+    .menu .enlaces a{
+        color: #fff;
+    }
+    .menu .current{
+        border-bottom: 2px solid #fff;
+    }
+    .frase{
+        width: 90%;
+        height: 65%;
+        font-size: .5em;
+    }
+    .present{
+        width: 90%;
+        height: 65%;
+        font-size: .4em;
+    }
+    .tem{
+        width: 90%;
+        height: 80%;
+        font-size: .4em;
+        display: flex;
+        flex-direction: column;
+    }
+    .tem .t{
+        display: flex;
+        align-items: center;
+        width: 40%;
+    }
+    .pr{
+        background: rgba(17, 17, 17, 0.596);
+    }
+    .pr .p p{
+        font-size: .45em;
+        color: #fff;
+        height: 100%;
+    }
+    .per{
+        width: 80px;
+        height: 80px;
+    }
+    .logo{
+        width: 80px;
+        height: 80px;
+    }
+    .titulo_pg, p{
+        font-size: 1em;
+        display: flex;
+        justify-content: center;
+    }
+    #prog .pro{
+        padding: 1.5em;
+    }
+    .image{
+        width: 80%;
+        height: 40%;
+    }
+    .image1{
+        width: 80%;
+        height: 40%;
+    }
+    .image2{
+        width: 80%;
+        height: 40%;
+    }
+    .footer{
+        background: #111;
+    }
+    .footer_titulo{
+        font-size: 1em;
+        color: #fff;
+    }
+    .footer_icon{
+        color: #fff;
+    }
+    .derechos{
+        color: #fff;
+        font-size: .75em;
+    }
+}
